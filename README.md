@@ -22,6 +22,7 @@ This repo is meant to facilitate quickly setting up a new WSL working environmen
  * Install base environment from environment_base.yml.
  * Install sql environment from environment_sql.yml.
  * Install environments and nbextensions in Jupyter Notebook
+ * Install nbstripout
 4. Replace WindowsTerminal settings.json file with WindowsTerminal/settings.json
 5. Sudo apt-get install
  * gedit and sublime
