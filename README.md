@@ -28,3 +28,5 @@ This repo is meant to facilitate quickly setting up a new WSL working environmen
  * gedit and sublime
  * msft sql odbc drivers for python/sql
  
+Notes
+Steps to get jupyter working in WSL: https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da#gistcomment-3121935
