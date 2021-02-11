@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/pjanowski/wsl_setup/branch/master/graph/badge.svg?token=znSYS91aD2)](https://codecov.io/gh/pjanowski/wsl_setup)
+
 # wsl_setup
 This repo is meant to facilitate quickly setting up a new WSL working environment for data science on a Windows OS. Note that with the advent of WSL2, the process here might change
 
