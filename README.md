@@ -6,14 +6,14 @@ This repo is meant to facilitate quickly setting up a new WSL working environmen
 
 0. On Windows install 
  * git for windows
- * meld to C:\meld 
+ * meld to C:\meld (no longer, just use VSCode for git merges and diffs)
  * notepad++ with compare, markdown, and json plugins and Navajo theme selected
- * VS2019 with extensions: HotKeys, HotCommands, Scope Studio, Productivity Power Tools 
+ * VS2019 with extensions: HotKeys, HotCommands, Scope Studio, Productivity Power Tools (only if using Visual Studio)
  * Windows Terminal
- * VS Code with SettingsSync plugin (point it at my gist)
+ * VS Code (and log into github account and sync settings)
  * Docker
  * LinqPad
-1. Install WSL and VcXsrv
+1. Install WSL 
 2. Move the following to home
  * .bash_profile
  * .bashrc 
@@ -27,7 +27,7 @@ This repo is meant to facilitate quickly setting up a new WSL working environmen
  * Install nbstripout
 4. Replace WindowsTerminal settings.json file with WindowsTerminal/settings.json
 5. Sudo apt-get install
- * gedit and sublime
+ * gedit and sublime (optional, now I just use VSCode)
  * msft sql odbc drivers for python/sql
  
 Notes
