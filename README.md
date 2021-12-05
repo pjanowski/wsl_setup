@@ -32,3 +32,9 @@ This repo is meant to facilitate quickly setting up a new WSL working environmen
  
 Notes
 Steps to get jupyter working in WSL: https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da#gistcomment-3121935
+
+So that jupyter notebook starts automatically in your windows browser
+1. Add this line to your ~/.jupyter/jupyter_notebook_config.py
+`c.NotebookApp.use_redirect_file = False`
+2. Set the BROWSER env var in your .bashrc  Eg:
+export BROWSER='/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
