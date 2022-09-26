@@ -1,5 +1,5 @@
 [credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager-core.exe
 [user]
 	name = PawelJanowski
 	email = pawelrc@microsoft.com
