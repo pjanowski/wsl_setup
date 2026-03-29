@@ -4,6 +4,7 @@
 This repo is meant to facilitate quickly setting up a new WSL working environment for data science on a Windows OS. Note that with the advent of WSL2, the process here might change
 
 
+a
 0. On Windows install 
  * git for windows
  * meld to C:\meld (no longer, just use VSCode for git merges and diffs)
