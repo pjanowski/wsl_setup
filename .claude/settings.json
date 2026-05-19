@@ -48,8 +48,9 @@
       "Bash(chmod*)",
       "Bash(chown*)",
       "Bash(dd*)",
-      "Bash(* | *)" 
-    ]
+      "Bash(* | *)"
+    ],
+    "defaultMode": "auto"
   },
   "hooks": {
     "Notification": [
@@ -57,7 +58,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run --no-project \"C:\\Users\\pjanowski\\.claude\\claude_hooks.py\" Notification --sound --ntfy",
+            "command": "uv run --no-project \"$HOME/.claude/claude_hooks.py\" Notification --sound --ntfy",
             "async": true
           }
         ]
@@ -68,7 +69,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run --no-project \"C:\\Users\\pjanowski\\.claude\\claude_hooks.py\" PermissionRequest --sound --ntfy",
+            "command": "uv run --no-project \"$HOME/.claude/claude_hooks.py\" PermissionRequest --sound --ntfy",
             "async": true
           }
         ]
@@ -79,12 +80,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run --no-project \"C:\\Users\\pjanowski\\.claude\\claude_hooks.py\" Stop --sound --ntfy",
+            "command": "uv run --no-project \"$HOME/.claude/claude_hooks.py\" Stop --sound --ntfy",
             "async": true
           }
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "oh-my-posh claude",
+    "padding": 0
   },
   "enabledPlugins": {
     "feature-dev@claude-plugins-official": true
@@ -100,9 +106,5 @@
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
   "theme": "light",
-  "statusLine": {
-    "type": "command",
-    "command": "oh-my-posh claude",
-    "padding": 0
-  }
+  "skipAutoPermissionPrompt": true
 }
