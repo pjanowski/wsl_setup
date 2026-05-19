@@ -38,3 +38,10 @@ So that jupyter notebook starts automatically in your windows browser
 `c.NotebookApp.use_redirect_file = False`
 2. Set the BROWSER env var in your .bashrc  Eg:
 export BROWSER='/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
+
+
+2026: WSL mostly works out of the box today. Oh my posh needs some finagling, check bashrc. Also added profile.ps1 for powershell setup and .claude for claude hooks and settings.json.
+
+
+
+

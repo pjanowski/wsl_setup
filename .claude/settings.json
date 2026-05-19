@@ -1,0 +1,108 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(**)",
+      "Write(**)",
+      "LS(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "TodoWrite(**)",
+      "Task(**)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git show*)",
+      "Bash(git blame*)",
+      "Bash(git branch*)",
+      "Bash(git remote -v*)",
+      "Bash(git config --get*)",
+      "Bash(ls -l*)",
+      "Bash(ls -a*)",
+      "Bash(cat *.md)",
+      "Bash(head -n 20*)",
+      "Bash(tail -n 20*)",
+      "Bash(tree -L 2*)",
+      "Bash(pwd)",
+      "Bash(echo *)",
+      "Bash(grep -r *)",
+      "Bash(grep --color=auto*)",
+      "Bash(man *)",
+      "Bash(which *)",
+      "Bash(type *)",
+      "Bash(pydoc*)",
+      "Bash(black --check*)",
+      "Bash(black --diff*)",
+      "Bash(pylint*)",
+      "Bash(flake8*)",
+      "Bash(mypy*)",
+      "Bash(eslint*)",
+      "Bash(pytest*)",
+      "Bash(make test*)",
+      "Bash(npm test*)"
+    ],
+    "deny": [
+      "Bash(rm*)",
+      "Bash(mv*)",
+      "Bash(sudo*)",
+      "Bash(chmod*)",
+      "Bash(chown*)",
+      "Bash(dd*)",
+      "Bash(* | *)" 
+    ]
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project \"C:\\Users\\pjanowski\\.claude\\claude_hooks.py\" Notification --sound --ntfy",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project \"C:\\Users\\pjanowski\\.claude\\claude_hooks.py\" PermissionRequest --sound --ntfy",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --no-project \"C:\\Users\\pjanowski\\.claude\\claude_hooks.py\" Stop --sound --ntfy",
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "feature-dev@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "light",
+  "statusLine": {
+    "type": "command",
+    "command": "oh-my-posh claude",
+    "padding": 0
+  }
+}
